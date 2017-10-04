@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   width: 100%;
-  min-width: 1170px;
+  min-width: 1220px;
   font-family: PT Sans;
 }
 body button {
@@ -9,9 +9,12 @@ body button {
 }
 body #header-menu {
   height: 100px;
-  margin: 0 auto;
-  width: 1170px;
+  min-width: 1170px;
+  width: 100%;
+  background-color: white;
   padding-top: 19px;
+  position: fixed;
+  z-index: 100;
 }
 body #header-menu #menu {
   width: 837px;
@@ -43,6 +46,11 @@ body #header-menu #menu .background .logo .logo1 {
   height: 68px;
   width: 68px;
   background-image: url(img/lotos.png);
+}
+body #header-margin {
+  height: 100px;
+  min-width: 1200px;
+  width: 100%;
 }
 body #slider {
   height: 725px;
@@ -84,7 +92,7 @@ body #slider .background1 .form_width .form input {
   border: 0;
   margin-top: 15px;
 }
-body #slider .background1 .form_width .form button {
+body #slider .background1 .form_width .form .submit {
   height: 50px;
   width: 170px;
   background-color: #5f6fe2;
@@ -96,6 +104,7 @@ body #slider .background1 .form_width .form button {
   margin-top: 31px;
   margin-right: 25px;
   float: right;
+  cursor: pointer;
 }
 body #slider .background1 .form_width .form button:hover {
   background-color: #475bf1;
@@ -146,6 +155,9 @@ body #block3 .yoga-class-1 {
   width: 570px;
   float: left;
   margin-bottom: 30px;
+  background-color: white;
+  border-radius: 7px;
+  height: 300px;
 }
 body #block3 .yoga-class-1 .img1 {
   float: left;
@@ -221,7 +233,7 @@ body #block4 .img8 {
 }
 body #block5 {
   width: 1170px;
-  overflow: auto;
+  height: 317px;
   margin: 0 auto;
   margin-bottom: 125px;
 }
@@ -245,6 +257,30 @@ body #block5 .float2 {
   width: 570px;
   background-image: url(img/Hue_Saturation_2.png);
   float: right;
+}
+body #block5 .float2 .left {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  background-image: url(img/Rectangle%2051.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 16px 14px;
+  margin-top: 119px;
+  border-radius: 25px;
+}
+body #block5 .float2 .right {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin-right: -25px;
+  background-image: url(img/Rectangle_5.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 22px 14px;
+  margin-top: 119px;
+  border-radius: 25px;
 }
 body #block6 {
   margin-bottom: 125px;
@@ -287,11 +323,14 @@ body #block7 {
   margin: 0 auto;
   margin-bottom: 125px;
 }
-body #block7 .price-1 {
-  margin-left: 30px;
+body #block7 .price {
+  background-color: white;
+  height: 493px;
   float: left;
+  text-align: center;
+  border-radius: 12px 12px 10px 10px;
 }
-body #block7 .price-1 .bt-buy {
+body #block7 .price .bt-buy {
   height: 150px;
   width: 370px;
   background-color: #5b6ceb;
@@ -301,29 +340,34 @@ body #block7 .price-1 .bt-buy {
   font-family: "Myriad Pro";
   margin-bottom: 50px;
 }
-body #block7 .price-1 .bt-buy .center {
+body #block7 .price .bt-buy .center {
   text-align: center;
 }
-body #block7 .price-1 .bt-buy .center .dollar {
+body #block7 .price .bt-buy .center .dollar {
   font-size: 32px;
   float: left;
+  margin-top: 54px;
+  margin-left: 100px;
 }
-body #block7 .price-1 .bt-buy .center .dollar49 {
+body #block7 .price .bt-buy .center .dollar49 {
   font-size: 67px;
   float: left;
+  margin-top: 38px;
+  margin-left: 24px;
 }
-body #block7 .price-1 .bt-buy .center .month {
+body #block7 .price .bt-buy .center .month {
   font-size: 18px;
+  margin-top: 80px;
+  margin-left: 5px;
   float: left;
 }
-body #block7 .price-1 .entry {
+body #block7 .price .entry {
   font-size: 18px;
   color: #555555;
   line-height: 40.5px;
-  margin-left: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
-body #block7 .price-1 button {
+body #block7 .price button {
   height: 49px;
   width: 170px;
   background-color: #5b6ceb;
@@ -331,16 +375,23 @@ body #block7 .price-1 button {
   border: 0;
   font-size: 18px;
   color: white;
-  margin-left: 97px;
+  transition: 0.5s;
 }
-body #block7 .price {
-  margin-left: 0;
+body #block7 .price button:hover {
+  box-shadow: 0px 0px 10px blue;
+  transition: 0.5s;
+}
+body #block7 .price_left {
+  margin-left: 30px;
 }
 body #block8 {
-  width: 1170px;
-  overflow: auto;
+  width: 1107px;
   margin: 0 auto;
   margin-bottom: 125px;
+  background-color: white;
+  padding-top: 37px;
+  padding-left: 63px;
+  height: 187px;
 }
 body #block8 .bloquotes {
   height: 148px;
@@ -361,6 +412,7 @@ body #block8 .next-trainer {
 }
 body #block8 .next-trainer .lorem {
   color: #555555;
+  height: 154px;
 }
 body #block8 .next-trainer .lorem .trainer1 {
   font-size: 16px;
@@ -370,18 +422,25 @@ body #block8 .next-trainer .lorem .trainer1 {
 body #block8 .next-trainer .paging {
   width: 285px;
 }
+body #block8 .next-trainer .paging .ava {
+  float: left;
+  margin-left: 29px;
+}
 body #block8 .next-trainer .paging .arr-prew {
   height: 29px;
   width: 29px;
   background-image: url(img/arr-prew.png);
   float: left;
+  margin-top: 18px;
 }
 body #block8 .next-trainer .paging .arr-next {
   background-image: url(img/arr-next.png);
   float: right;
 }
-body #block8 .next-trainer .paging img {
+body #block8 .next-trainer .paging .trainer2 {
   float: left;
+  margin-top: 9px;
+  margin-left: 11px;
 }
 body #block8 .next-trainer .paging .trainer2 .sara {
   font-size: 16px;
@@ -430,19 +489,35 @@ body #footer .background3 .block9 .logo2 {
 body #footer .background3 .block9 .logo2 .img2 {
   float: left;
 }
-body #footer .background3 .block9 .logo2 .joseph {
+body #footer .background3 .block9 .logo2 .social1 {
+  margin-top: 30px;
+  height: 47px;
+}
+body #footer .background3 .block9 .logo2 .social1 .jos {
+  width: 35px;
+  float: left;
+}
+body #footer .background3 .block9 .logo2 .social1 .joseph {
   margin-top: -5px;
   margin-left: 20px;
   float: left;
 }
-body #footer .background3 .block9 .logo2 .social1 {
-  margin-top: 30px;
-}
 body #footer .background3 .block9 .logo3 {
-  margin-top: 173px;
+  margin-top: 185px;
+  margin-left: 130px;
+  float: left;
 }
 body #footer .background3 .block9 .logo3 .social {
-  margin-top: 60px;
+  height: 78px;
+}
+body #footer .background3 .block9 .logo3 .social .jos {
+  width: 35px;
+  float: left;
+}
+body #footer .background3 .block9 .logo3 .social .joseph {
+  margin-top: -5px;
+  margin-left: 20px;
+  float: left;
 }
 body #footer .background4 {
   width: 100%;
