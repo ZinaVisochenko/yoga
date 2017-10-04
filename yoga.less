@@ -3,62 +3,64 @@ body{
     width: 100%;
     min-width: 1170px;
     font-family: PT Sans;
+    background-color: gray;
     button{
         cursor: pointer;
     }
     #header-menu{
-            height: 100px;
+        height: 100px;
+        min-width: 1170px; 
+        width: 100%;
+        background-color: white;
+        padding-top: 19px;
+        position: fixed;
+        z-index: 100;
+        #menu{
+            width: 837px;
             margin: 0 auto;
-            width: 1170px;            
-            //text-align: center;
-            padding-top: 19px;
-            #menu{
-                width: 837px;
-                margin: 0 auto;
-                //min-width: 1000px;
-                .background{
-                    //margin: 0 auto;
-                    //width: 1170px;
-                    //height: 61px;
-                    //text-align: center;
-                    //padding-top: 19px;
-                    .menuleft{
-                        width: 398px;
-                        float: left;
-                         a{
-                            color: rgb(95, 111, 226);
-                            font-size: 14px;
-                            font-family: PT Sans;
-                            text-decoration: none;
-                            margin-right: 32px;
+            .background{
+                .menuleft{
+                    width: 398px;
+                    float: left;
+                     a{
+                        color: rgb(95, 111, 226);
+                        font-size: 14px;
+                        font-family: PT Sans;
+                        text-decoration: none;
+                        margin-right: 32px;
 
-                        }
                     }
-                    .menuright{
-                        //width: 398px;
-                        //float: left;
-                         a{
-                            color: rgb(95, 111, 226);
-                            font-size: 14px;
-                            font-family: PT Sans;
-                            text-decoration: none;
-                            margin-left: 32px;
+                }
+                .menuright{
+                    //width: 398px;
+                    //float: left;
+                     a{
+                        color: rgb(95, 111, 226);
+                        font-size: 14px;
+                        font-family: PT Sans;
+                        text-decoration: none;
+                        margin-left: 32px;
 
-                        }
                     }
-                   
-                    .logo{
-                       width: 219px; 
-                        float: left;
-                        .logo1{
-                            height: 68px;
-                            width: 68px;
-                            background-image: url(img/lotos.png);
-                        }
+                }
+
+                .logo{
+                   width: 219px; 
+                    float: left;
+                    .logo1{
+                        height: 68px;
+                        width: 68px;
+                        background-image: url(img/lotos.png);
                     }
                 }
             }
         }
+    }
+    #header-margin {
+        height: 100px;
+        min-width: 1170px; 
+        width: 100%;
+    }
     #slider{
         height: 725px;
         .background1{
@@ -69,7 +71,7 @@ body{
             background-size: cover;
             background-image: url(img/yoga.jpg);
             .form_width{
-                padding: 75px;
+                padding-top: 75px;
                 overflow: auto;
                 width: 1170px;
                 margin: 0 auto;
@@ -97,7 +99,7 @@ body{
                         border: 0;
                         margin-top: 15px;
                     }
-                    button{
+                    .submit{
                         height: 50px;
                         width: 170px;
                         background-color: rgb(95, 111, 226);
@@ -109,6 +111,7 @@ body{
                         margin-top: 31px;
                         margin-right: 25px;
                         float: right;
+                        cursor: pointer;
                     }
                     button:hover{
                         background-color: rgb(71, 91, 241);
@@ -268,7 +271,7 @@ body{
         }
     }
      #block6{
-        //height: 725px;
+        margin-bottom: 125px;
         .background2{
             width: 100%;
             height: 762px;
@@ -301,5 +304,202 @@ body{
                 }
             }
          }
+    }
+    #block7{
+        width: 1170px;
+        overflow: auto;
+        margin: 0 auto;
+        margin-bottom: 125px;
+        .price{
+            background-color: white;
+            height: 493px;
+            float: left;
+            text-align: center;
+            border-radius: 12px 12px 10px 10px;
+            .bt-buy{
+                height: 150px;
+                width: 370px;
+                background-color: rgb(91, 108, 235);
+                border-radius: 10px 10px 0 0;
+                color: white;
+                font-weight: bold;
+                font-family: "Myriad Pro";
+                margin-bottom: 50px;
+                .center{
+                    text-align: center;
+                    .dollar{
+                        font-size: 32px;
+                        float: left;
+                        margin-top: 54px;
+                        margin-left: 100px;
+                    }
+                    .dollar49{
+                        font-size: 67px;
+                        float: left;
+                        margin-top: 38px;
+                        margin-left: 24px;
+                    }
+                    .month{
+                        font-size: 18px;
+                        margin-top: 80px;
+                        margin-left: 5px;
+                        float: left;
+                    }
+                }
+            }
+            .entry{
+                font-size: 18px;
+                color: rgb(85, 85, 85);
+                line-height: 40.5px;
+                margin-bottom: 35px;
+            }
+            button{
+                height: 49px;
+                width: 170px;
+                background-color: rgb(91, 108, 235);
+                border-radius: 15px;
+                border: 0;
+                font-size: 18px;
+                color: white;
+                transition: 0.5s;
+            }
+            button:hover{
+                box-shadow: 0px 0px 10px blue;
+                transition: 0.5s;
+            }
+        }
+        .price_left{
+            margin-left: 30px;
+        }
+    }
+    #block8{
+        width: 1170px;
+        overflow: auto;
+        margin: 0 auto;
+        margin-bottom: 125px;
+        .bloquotes{
+            height: 148px;
+            width: 148px;
+            background-image: url(img/laura.png);
+            float: left;
+        }
+        .quotes{
+            font-size: 60px;
+            color: rgb(91, 108, 235);
+            font-family: "Myriad Pro";
+            margin-left: 50px;
+            float: left;
+        }
+        .next-trainer{
+            margin-left: 30px;
+            float: left;
+            .lorem{
+                color: rgb(85, 85, 85); 
+                .trainer1{
+                    font-size: 16px;
+                    color: rgb(91, 108, 235);
+                    font-weight: bold;
+                }
+            }
+            .paging{
+                width: 285px;
+                .arr-prew{
+                    height: 29px;
+                    width: 29px;
+                    background-image: url(img/arr-prew.png);
+                    float: left;
+                }
+                .arr-next{
+                    background-image: url(img/arr-next.png);
+                    float: right;
+                }
+                img{
+                    float: left;
+                }
+                .trainer2{
+                    
+                    .sara{
+                        font-size: 16px;
+                        color: rgb(85, 85, 85);
+                        font-weight: bold;
+                        float: left;
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            } 
+        }
+    }
+    #footer{
+        .background3{
+            width: 100%;
+            height: 550px;
+            background-color: rgb(91, 108, 235);
+            .block9{
+                width: 1170px;
+                overflow: auto;
+                margin: 0 auto;
+                color: white;
+                .logo1{
+                    margin-top: 100px;
+                    float: left;
+                    .about1{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: 64px;
+                    }
+                    .lorem1{
+                        font-size: 14px;
+                        margin-bottom: 73px;
+                    }
+                    .soc-icons{
+                        img{
+                           margin-left: 18px;
+                            float: left;
+                        }
+                        .img1{
+                            margin-left: 0;
+                        }
+                    }
+                    
+                }
+                .logo2{
+                    margin-left: 130px;
+                    float: left;
+                    .img2{
+                        float: left;
+                    }
+                    .joseph{
+                        margin-top: -5px;
+                        margin-left: 20px;
+                        float: left;
+                    }
+                    .social1{
+                        margin-top: 30px;
+                    }
+                }
+                .logo3{
+                    margin-top: 173px;
+                    .social{
+                        margin-top: 60px;
+                    }
+                }
+            } 
+        }
+        .background4{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(83, 99, 216);
+            .block10{
+                width: 1170px;
+                overflow: auto;
+                margin: 0 auto;
+                color: rgb(183, 191, 252);
+                font-size: 16px;
+                text-align: center;
+                padding-top: 40px;
+            }
+        }
     }
 }
